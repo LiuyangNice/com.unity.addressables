@@ -199,8 +199,6 @@ namespace UnityEngine.ResourceManagement.AsyncOperations
         {
             get
             {
-                if (m_InternalOp == null || m_InternalOp.Version != m_Version)
-                    throw new Exception("Attempting to use an invalid operation handle");
                 return m_InternalOp;
             }
         }
